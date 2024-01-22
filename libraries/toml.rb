@@ -17,7 +17,6 @@
 #
 
 require 'deepsort'
-require 'toml-rb'
 
 module Grafana
   module Cookbook
@@ -30,6 +29,7 @@ module Grafana
       # @return [Hash] File contents
       #
       def load_tomlfile(file)
+        require 'toml-rb'
         return unless File.exist?(file)
 
         ::TomlRB.load_file(file)
