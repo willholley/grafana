@@ -17,5 +17,7 @@ supports 'amazon'
 supports 'scientific'
 supports 'oracle'
 
+depends 'build-essential'
+
 gem 'deepsort'
 gem 'inifile'
